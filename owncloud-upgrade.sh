@@ -95,6 +95,8 @@ read -p "[$(date --rfc-3339=seconds)] Load Backup? (y/n) " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
         echo -e "\n[$(date --rfc-3339=seconds)] Not implemented yet."
+		#rm -rf ${path}3rdparty/ ${path}COPYING-AGPL ${path}COPYING-README ${path}core/ ${path}db_structure.xml ${path}index.php ${path}lib/ ${path}search/ ${path}status.php ${path}apps/ ${path}files/ ${path}l10n/ ${path}ocs/ ${path}settings/ ${path}AUTHORS ${path}public.php ${path}README ${path}remote.php ${path}themes/ ${path}webapps.php ${path}cron.php
+		#tar zxf ${backuppath}owncloud-backup.tgz $path
 else
 	echo -e "\n"
 fi
